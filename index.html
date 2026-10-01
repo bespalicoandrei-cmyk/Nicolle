@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Nicoleta ❤️</title>
+<title>Pentru Nicoleta ❤️</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
@@ -25,9 +25,7 @@ body {
     overflow-x: hidden;
 }
 
-/* =========================
-   FUNDAL
-========================= */
+/* FUNDAL */
 
 body::before {
     content: "";
@@ -40,9 +38,7 @@ body::before {
     z-index: -2;
 }
 
-/* =========================
-   INIMIOARE
-========================= */
+/* INIMIOARE */
 
 .hearts {
     position: fixed;
@@ -76,9 +72,7 @@ body::before {
     }
 }
 
-/* =========================
-   INTRO
-========================= */
+/* INTRO */
 
 #intro {
     min-height: 100vh;
@@ -155,9 +149,7 @@ body::before {
     box-shadow: 0 15px 35px rgba(184,90,114,0.25);
 }
 
-/* =========================
-   APLICAȚIA
-========================= */
+/* APLICAȚIA */
 
 #app {
     display: none;
@@ -294,7 +286,7 @@ body::before {
     }
 }
 
-/* BUTON BIFARE */
+/* BUTON */
 
 .check-btn {
     align-self: center;
@@ -322,7 +314,7 @@ body::before {
     transform: scale(1.08);
 }
 
-/* SURPRIZĂ */
+/* SURPRIZE */
 
 .surprise {
     display: none;
@@ -350,9 +342,7 @@ body::before {
     }
 }
 
-/* =========================
-   FINAL
-========================= */
+/* FINAL */
 
 #finalScreen {
     display: none;
@@ -365,10 +355,11 @@ body::before {
     justify-content: center;
     text-align: center;
     padding: 25px;
+    overflow-y: auto;
 }
 
 .final-content {
-    max-width: 800px;
+    max-width: 850px;
     animation: finalAppear 1.5s ease;
 }
 
@@ -424,7 +415,7 @@ body::before {
     transform: translateY(-3px);
 }
 
-/* MESAJUL SECRET */
+/* MESAJ FINAL */
 
 .secret-message {
     display: none;
@@ -516,18 +507,21 @@ body::before {
     .final-content h1 {
         font-size: 48px;
     }
+
+    .secret-message h2 {
+        font-size: 42px;
+    }
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- INIMIOARE -->
 <div class="hearts" id="hearts"></div>
 
-<!-- =========================
-     INTRO
-========================= -->
+
+<!-- INTRO -->
 
 <section id="intro">
 
@@ -543,7 +537,7 @@ body::before {
 
         <p>
             Am încercat să pun în cuvinte ceea ce simt pentru tine.
-            Nu știu dacă 30 de motive sunt suficiente...
+            Nu știu dacă 31 de motive sunt suficiente...
             dar vreau să le descoperi unul câte unul.
         </p>
 
@@ -556,9 +550,7 @@ body::before {
 </section>
 
 
-<!-- =========================
-     EXPERIENȚA
-========================= -->
+<!-- EXPERIENȚA -->
 
 <section id="app">
 
@@ -571,7 +563,7 @@ body::before {
             </div>
 
             <h2>
-                30 de motive pentru care te iubesc
+                31 de motive pentru care te iubesc
             </h2>
 
             <p>
@@ -584,8 +576,8 @@ body::before {
         <div class="progress-area">
 
             <div class="progress-info">
-                <span id="progressText">Motivul 1 din 30</span>
-                <span id="percent">0%</span>
+                <span id="progressText">Motivul 1 din 31</span>
+                <span id="percent">3%</span>
             </div>
 
             <div class="progress-bar">
@@ -601,11 +593,9 @@ body::before {
                 Motivul 01
             </div>
 
-            <div class="reason-text" id="reasonText">
-            </div>
+            <div class="reason-text" id="reasonText"></div>
 
-            <div class="reason-sub" id="reasonSub">
-            </div>
+            <div class="reason-sub" id="reasonSub"></div>
 
             <button class="check-btn" id="checkBtn" onclick="checkReason()">
                 ✓
@@ -621,9 +611,7 @@ body::before {
 </section>
 
 
-<!-- =========================
-     FINAL
-========================= -->
+<!-- FINAL -->
 
 <section id="finalScreen">
 
@@ -638,13 +626,14 @@ body::before {
         </h1>
 
         <p>
-            Toate cele 30 de motive sunt doar o mică parte
+            Toate cele 31 de motive sunt doar o mică parte
             din ceea ce simt pentru tine.
         </p>
 
         <button class="secret-btn" id="secretBtn" onclick="showSecret()">
             Mai am ceva să-ți spun…
         </button>
+
 
         <div class="secret-message" id="secretMessage">
 
@@ -653,13 +642,22 @@ body::before {
             </div>
 
             <h2>
-                TE IUBESC MAI TARE, NICOLETA.
+                VREAU SĂ AJUNGEM ÎMPREUNĂ<br>
+                LA ADÂNCI BĂTRÂNEȚI.
             </h2>
 
             <p>
-                Și, indiferent câte motive aș scrie aici,
-                tot nu ar fi suficiente pentru cât însemni pentru mine.
+                Te iubesc mai tare decât pot pune în cuvinte.
                 <br><br>
+
+                Și, dintre toate lucrurile pe care mi le doresc,
+                unul este să te am lângă mine cât mai mult timp.
+                <br><br>
+
+                Să râdem împreună, să trecem prin toate împreună
+                și, într-o zi, să ne uităm înapoi la tot ce am trăit.
+                <br><br>
+
                 ❤️
             </p>
 
@@ -673,7 +671,7 @@ body::before {
 <script>
 
 /* =========================
-   CELE 30 DE MOTIVE
+   31 DE MOTIVE
 ========================= */
 
 const reasons = [
@@ -700,7 +698,7 @@ const reasons = [
 
     {
         text: "Te iubesc pentru toate momentele mici pe care le transformi în amintiri frumoase.",
-        sub: "Și pentru că cele mai simple momente devin speciale cu tine."
+        sub: "Cu tine, lucrurile simple devin speciale."
     },
 
     {
@@ -755,7 +753,7 @@ const reasons = [
 
     {
         text: "Te iubesc pentru că mă faci să vreau să devin o versiune mai bună a mea.",
-        sub: "Nu pentru că îmi ceri asta, ci pentru că tu meriți tot ce este mai bun."
+        sub: "Pentru că tu meriți tot ce este mai bun."
     },
 
     {
@@ -826,6 +824,11 @@ const reasons = [
     {
         text: "Te iubesc pentru că ești Nicoleta mea.",
         sub: "Și pentru că, dacă ar trebui să aleg din nou, te-aș alege tot pe tine."
+    },
+
+    {
+        text: "Te iubesc pentru că vreau să-mi trăiesc viața alături de tine.",
+        sub: "Vreau să ajungem împreună la adânci bătrâneți și să privim înapoi la toată povestea noastră cu zâmbetul pe buze."
     }
 
 ];
@@ -833,9 +836,7 @@ const reasons = [
 let current = 0;
 
 
-/* =========================
-   PORNIRE
-========================= */
+/* PORNIRE */
 
 function startExperience() {
 
@@ -861,9 +862,7 @@ function startExperience() {
 }
 
 
-/* =========================
-   ÎNCARCĂ MOTIVUL
-========================= */
+/* ÎNCARCĂ MOTIVUL */
 
 function loadReason() {
 
@@ -889,7 +888,8 @@ function loadReason() {
     document.getElementById("progressText").textContent =
         "Motivul " + (current + 1) + " din " + reasons.length;
 
-    const percentage = Math.round(((current + 1) / reasons.length) * 100);
+    const percentage =
+        Math.round(((current + 1) / reasons.length) * 100);
 
     document.getElementById("percent").textContent =
         percentage + "%";
@@ -897,7 +897,8 @@ function loadReason() {
     document.getElementById("progress").style.width =
         percentage + "%";
 
-    const btn = document.getElementById("checkBtn");
+    const btn =
+        document.getElementById("checkBtn");
 
     btn.classList.remove("checked");
     btn.textContent = "✓";
@@ -906,13 +907,12 @@ function loadReason() {
 }
 
 
-/* =========================
-   BIFARE
-========================= */
+/* BIFARE */
 
 function checkReason() {
 
-    const btn = document.getElementById("checkBtn");
+    const btn =
+        document.getElementById("checkBtn");
 
     if (btn.classList.contains("checked")) {
         return;
@@ -946,13 +946,12 @@ function checkReason() {
 }
 
 
-/* =========================
-   SURPRIZE
-========================= */
+/* SURPRIZE */
 
 function showSurprise() {
 
-    const surprise = document.getElementById("surprise");
+    const surprise =
+        document.getElementById("surprise");
 
     const messages = [
 
@@ -966,22 +965,26 @@ function showSurprise() {
 
         "Și da... te-aș alege din nou.",
 
-        "Încă puțin. Am păstrat ceva special pentru final. ❤️"
+        "Încă puțin. Am păstrat ceva special pentru final. ❤️",
+
+        "Acesta este ultimul motiv... dar nu și ultima mea dorință pentru noi. ❤️"
 
     ];
 
-    const index = Math.floor(current / 5);
+    const index =
+        Math.min(
+            Math.floor(current / 5),
+            messages.length - 1
+        );
 
     surprise.textContent =
-        messages[index] || messages[0];
+        messages[index];
 
     surprise.style.display = "block";
 }
 
 
-/* =========================
-   FINAL
-========================= */
+/* FINAL */
 
 function showFinal() {
 
@@ -996,14 +999,15 @@ function showFinal() {
 }
 
 
-/* =========================
-   MESAJUL SECRET
-========================= */
+/* MESAJUL SECRET */
 
 function showSecret() {
 
-    const btn = document.getElementById("secretBtn");
-    const message = document.getElementById("secretMessage");
+    const btn =
+        document.getElementById("secretBtn");
+
+    const message =
+        document.getElementById("secretMessage");
 
     btn.style.display = "none";
 
@@ -1014,9 +1018,7 @@ function showSecret() {
 }
 
 
-/* =========================
-   INIMIOARE
-========================= */
+/* INIMIOARE */
 
 function createHeart() {
 
@@ -1063,7 +1065,7 @@ function createExtraHearts() {
 }
 
 
-/* inimioare permanente */
+/* INIMIOARE PERMANENTE */
 
 setInterval(createHeart, 900);
 
